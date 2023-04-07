@@ -1,0 +1,4 @@
+Rule Name: Hotlink Protection
+Rule Action: Block
+
+not (http.referer contains "umutozen.com" or http.referer eq "cdn.mertcangokgoz.com" or http.referer eq "www.cloudflare.com")
