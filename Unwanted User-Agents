@@ -1,3 +1,7 @@
+Rule Name: Unwanted User-Agents
+Rule Action: Block
+
+
 (lower(http.user_agent) contains "?%00") or 
 (lower(http.user_agent) contains "$[") or 
 (lower(http.user_agent) contains "${") or 
