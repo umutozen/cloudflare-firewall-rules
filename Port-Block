@@ -1,0 +1,4 @@
+Rule Name: Port Block
+Rule Action: Block
+
+(http.host eq "mertcangokgoz.com") and not cf.edge.server_port in {80 443}
