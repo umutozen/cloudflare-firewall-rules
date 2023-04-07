@@ -1,0 +1,15 @@
+ASN blocking on Cloudflare Firewall can cause unwanted results, so you should be very careful when using it.
+
+Rule Name: Unwanted ASN
+Rule Action: Block
+
+(ip.geoip.asnum eq 16276) or 
+(ip.geoip.asnum eq 14618) or 
+(ip.geoip.asnum eq 16509) or 
+(ip.geoip.asnum eq 24940) or 
+(ip.geoip.asnum eq 37153) or 
+(ip.geoip.asnum eq 32244) or 
+(ip.geoip.asnum eq 22611) or 
+(ip.geoip.asnum eq 54641) or 
+(ip.geoip.asnum eq 47583) or 
+(ip.geoip.asnum eq 55293)
